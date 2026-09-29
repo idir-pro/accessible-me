@@ -15,7 +15,7 @@
 <body>
   <div class="container">
 
-    <!-----Replace the div with class "site-header" with a semantic header element,
+  <!-- Replace the div with class "site-header" with a semantic header element,
        the div with class "main-nav" with a nav element, 
          the div with class "main-content" with a main element,
       and the div with class "site-footer" with a footer element.
@@ -45,10 +45,10 @@
         </ul>
       </nav>
 
-      <!-- AI prompt: Add alt text to my banner image.
+      <!-- ai prompt: Add alt text to my banner image.
 
       I used AI here just to add alt text and to see if AI can make mistakes even with simple things. -->
-      
+
       <img src="https://placekitten.com/1200/900" class="banner" alt="Jam Box Studios banner image">
     </header>
     <main class="main-content">
@@ -72,15 +72,26 @@
           B3T 0L0
         </p>
       </div>
+     <!-- I used AI like the assignment required to check if everything is good
+   AI showed me where the problems were, so I fixed them myself
+   I also used the HTML Validator to check my HTML and everything was green with no errors -->
+
       <div class="contact-section">
         <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="fullname">Full Name</label>
+
+         <input type="text" id="fullname" placeholder="Full Name">
+
+         <label for="email">Email</label>
+
+        <input type="email" id="email" placeholder="Email">
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Subject">
+
+        <label for="message">Your Message</label>
+      <textarea id="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </div>
