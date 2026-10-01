@@ -81,7 +81,12 @@ like Home, Products Reservation and Studio.    */
   top: -1000px;
   left: 0;
 }
-
+/* WAVE found 3 contrast errors on my skip links.
+i changed the background to white and the text to black
+to improve the contrast and accessibility. */
 nav.skiplinks a:focus {
   top: 0;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
 }
