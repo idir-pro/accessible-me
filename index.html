@@ -45,7 +45,7 @@
 
       <h1>Jam Box Studios</h1>
       <!-- i added an id to connect the main navigation with the skip link.
-     i also added an ARIA label to help screen reader users identify the main
+     i also added an ARIA labelnto help screen reader users identify the main
       navigation. -->
 
           <nav class="main-nav" id="mainnav" aria-label="Main navigation">
@@ -71,13 +71,21 @@
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
+      
+      <!-- AI prompt: Add Schema.org Person information to the owner section
+  using HTML microdata with itemscope, itemtype, and itemprop.
+  Do not use JavaScript and do not change anything else in my HTML.
+
+  i used ia her  to add Schema information for the owner's
+  name, job title, email, and phone number  -->
+      
+      <div class="owner" itemscope itemtype="https://schema.org/Person">
         <h2>Meet the owner</h2>
         <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+          <li>Name: <span itemprop="name">John Doe</span></li>
+          <li>Title: <span itemprop="jobTitle">CEO</span></li>
+          <li>Email: <span itemprop="email">johnjoe@jambox.ca</span></li>
+          <li>Phone: <span itemprop="telephone">613-000-0000</span></li>
         </ul>
         <h3>Address</h3>
         <p>
