@@ -14,7 +14,9 @@ h5,
 h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
-
+  /* 
+  I used a light background to make the page cleaner and easier
+   to read. */
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -26,6 +28,8 @@ h6 {
 img {
   width: 100%;
 }
+    /* I changed the navigation background and text color
+to make the page look better while keeping good contrast. */
 
 .main-nav {
   background-color: #222;
@@ -78,9 +82,9 @@ form button {
   padding: 2rem 0;
 }
 
-  /* WAVE found 3 contrast errors on my skip links.
-I changed the background to white and the text to black
-to improve the contrast and accessibility. */  
+  /* I hide the skip links off screen and they appear when using the keyboard.
+WAVE found 3 contrast errors , so I changed the
+background to white and the text to black for better contrast. */
 
   nav.skiplinks a {
   position: absolute;
